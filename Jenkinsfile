@@ -20,7 +20,7 @@ pipeline {
                 // sh docker build -t sca-capstone ./Dockerfile
                 // sh docker tag sca-capstone gcr.io/sca-capstone-1/sca-capstone
                 // sh docker push gcr.io/sca-capstone-1/sca-capstone
-                echo "push image to gcr"
+                // echo "push image to gcr"
             }
         }
     }
