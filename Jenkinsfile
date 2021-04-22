@@ -8,7 +8,7 @@ pipeline {
                 // nodejs(nodeJSInstallationName: 'Node 6.x', configId: '<config-file-provider-id>')
                 sh '''
                     npm install
-                    npm version
+                    npm --version
                 '''
             }
         }
@@ -24,15 +24,15 @@ pipeline {
                         BRANCH_NAME == 'main'
                     }
                 }
-                sh'''
+                // sh'''
 
-                      echo "Build docker image"
-                    //   docker build -t sca-capstone .
-                      echo "Tag built docker image"
-                    //   docker tag sca-capstone:latest gcr.io/sca-capstone-1/sca-capstone-image:latest
-                      echo "Push Image to Google Container Registry"
-                    //   docker push gcr.io/sca-capstone-1/sca-capstone-image:latest
-                  '''
+                //       echo "Build docker image"
+                //        docker build -t sca-capstone .
+                //       echo "Tag built docker image"
+                //       docker tag sca-capstone:latest gcr.io/sca-capstone-1/sca-capstone-image:latest
+                //       echo "Push Image to Google Container Registry"
+                //        docker push gcr.io/sca-capstone-1/sca-capstone-image:latest
+                //   '''
             }
 
         }
