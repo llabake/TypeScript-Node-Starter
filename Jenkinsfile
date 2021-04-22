@@ -19,11 +19,7 @@ pipeline {
         }
         stage('Build Docker Image') {
             steps {
-                when {
-                    expression {
-                        BRANCH_NAME == 'main'
-                    }
-                }
+                echo "Build docker image"
                 // sh'''
 
                 //       echo "Build docker image"
