@@ -5,7 +5,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo "Running Build"
-                nodejs(nodeJSInstallationName: 'Node 6.x', configId: '<config-file-provider-id>')
+                // nodejs(nodeJSInstallationName: 'Node 6.x', configId: '<config-file-provider-id>')
                 sh '''
                     npm install
                     npm version
